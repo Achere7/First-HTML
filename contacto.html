@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Galería Osaka</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado y navegación -->
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contenido.html">Colección</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido formulario -->
+    <main>
+        <section class="intro-contacto">
+            <h1>Contacto</h1>
+            <p class="descripcion-contacto">Si estas interesado en alguna de nuestras obras, por favor rellena el siguiete formulario y te contactaremos a la mayor brevedad posible.</p>
+        </section>
+        <div class="contacto-contenedor">
+            <section class="formulario-seccion">
+                <h2>Formulario de contacto</h2>
+                <form action="#" method="post" class="formulario-contacto">
+                    
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta-obra">Consulta sobre una obra</option>
+                            <option value="compra">Interés en compra</option>
+                            <option value="visita">Agendar visita a la galería</option>
+                            <option value="general">Consulta general</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensaje">Mensaje </label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+
+                    <div class="campo-formulario checkbox-campo">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad y el tratamiento de mis datos personales</label>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                </form>
+            </section>
+
+            <!-- Información de contacto -->
+            <aside class="info-contacto">
+                <h2>Información de contacto</h2>
+                
+                <div class="info-item">
+                    <h3>Dirección</h3>
+                    <p>Zaragoza<br>
+                    51002<br>
+                    España</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Teléfono</h3>
+                    <p>689 562 365 456 458</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>galeriaosaka@gmail.com</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Horario de atención</h3>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Galería Osaka. Todos los derechos reservados.</p>
+        <p>Licencia: Creative Commons BY-NC-SA 4.0 / Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
