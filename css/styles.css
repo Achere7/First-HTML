@@ -1,0 +1,583 @@
+/* ===================================
+   ESTILOS GENERALES
+   =================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background-color: #faf9f7;
+}
+
+/* ===================================
+   NAVEGACIÓN
+   =================================== */
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navegacion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #e8e8e8;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.menu li a:hover {
+    color: #c9a961;
+}
+
+.menu li a.activo {
+    color: #c9a961;
+    border-bottom: 2px solid #c9a961;
+}
+
+/* ===================================
+   CONTENIDO PRINCIPAL
+   =================================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ===================================
+   SECCIÓN PORTADA
+   =================================== */
+
+.portada {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+}
+
+.portada-contenido {
+    margin-bottom: 2rem;
+}
+
+.portada h1 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.imagen-portada {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================
+   SECCIÓN PRESENTACIÓN
+   =================================== */
+
+.presentacion {
+    margin-bottom: 4rem;
+}
+
+.presentacion h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.presentacion-contenedor {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.presentacion-texto {
+    flex: 1;
+}
+
+.presentacion-texto p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: #444;
+    line-height: 1.8;
+}
+
+.presentacion-imagen-interior {
+    flex: 1;
+    text-align: center;
+}
+
+.presentacion-imagen-interior img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================
+   SECCIÓN OBRAS DESTACADAS
+   =================================== */
+
+.obrasdestacadas {
+    margin-bottom: 4rem;
+}
+
+.obrasdestacadas h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.tarjeta p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+/* ===================================
+   PIE DE PÁGINA
+   =================================== */
+
+footer {
+    background-color: #1a1a1a;
+    color: #e8e8e8;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* ===================================
+   PÁGINA DE CONTACTO
+   =================================== */
+
+.intro-contacto {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.intro-contacto h1 {
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.descripcion-contacto {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.contacto-contenedor {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.formulario-seccion {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-seccion h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-formulario label {
+    font-size: 1rem;
+    color: #2c2c2c;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #c9a961;
+    background-color: #ffffff;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-campo {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.checkbox-campo input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-campo label {
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.boton-enviar {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    letter-spacing: 1px;
+}
+
+.boton-enviar:hover {
+    background-color: #c9a961;
+    transform: translateY(-2px);
+}
+
+.info-contacto {
+    flex: 1;
+}
+
+.info-contacto h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.info-item {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.8rem;
+}
+
+.info-item p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.info-imagen {
+    margin-top: 1.5rem;
+}
+
+.info-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================
+   RESPONSIVE - TABLETS
+   =================================== */
+
+@media (max-width: 768px) {
+    .menu {
+        gap: 1.5rem;
+    }
+    
+    .portada h1 {
+        font-size: 2.2rem;
+    }
+    
+    .subtitulo {
+        font-size: 1rem;
+    }
+    
+    .presentacion-contenedor {
+        flex-direction: column;
+    }
+    
+    .tarjetas {
+        flex-direction: column;
+    }
+}
+
+/* ===================================
+   PÁGINA DE COLECCIÓN
+   =================================== */
+
+.intro-coleccion {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.intro-coleccion h1 {
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.descripcion-coleccion {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.galeria h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.obras-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.obra {
+    display: flex;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.obra:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.obra-imagen {
+    flex: 0 0 350px;
+}
+
+.obra-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.obra-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.obra-info h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.obra-artista,
+.obra-periodo,
+.obra-tecnica {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.obra-descripcion {
+    margin-top: 1rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* ===================================
+   RESPONSIVE - TABLETS
+   =================================== */
+
+@media (max-width: 768px) {
+    .menu {
+        gap: 1.5rem;
+    }
+    
+    .portada h1 {
+        font-size: 2.2rem;
+    }
+    
+    .subtitulo {
+        font-size: 1rem;
+    }
+    
+    .presentacion-contenedor {
+        flex-direction: column;
+    }
+    
+    .tarjetas {
+        flex-direction: column;
+    }
+    
+    .obra {
+        flex-direction: column;
+    }
+    
+    .obra-imagen {
+        flex: 1;
+    }
+    
+    .contacto-contenedor {
+        flex-direction: column;
+    }
+    
+    .formulario-seccion {
+        padding: 1.5rem;
+    }
+}
+
+/* ===================================
+   RESPONSIVE - MÓVILES
+   =================================== */
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+    
+    .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .portada h1 {
+        font-size: 1.8rem;
+    }
+    
+    .presentacion h2,
+    .obrasdestacadas h2 {
+        font-size: 1.8rem;
+    }
+    
+    .intro-coleccion h1 {
+        font-size: 2rem;
+    }
+    
+    .obra {
+        padding: 1.5rem;
+    }
+}
